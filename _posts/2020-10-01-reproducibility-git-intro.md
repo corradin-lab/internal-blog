@@ -1,5 +1,13 @@
+---
+toc: true
+layout: post
+description: Meeting notes for introduction to git Oct 1st
+categories: [git],[reproducibility]
+title: Introduction to git
+---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 - [Meeting 2](#meeting-2)
 - [Talked about our current issues](#talked-about-our-current-issues)
 - [Talked about the article  Reproducible Programming for Biologists Who Code. Part 1: Must do](#talked-about-the-article-reproducible-programming-for-biologists-who-code-part-1-must-do)
@@ -57,7 +65,8 @@
 ### Introducing git
 
 #### Barebones, layman definition
-![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](../images/git-simple.png)
+![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
+![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](images/git/git-simple.png)
 - `git` is like the `.snapshot` folder storing backup of different versions for you only. `github` is like Google Drive, where you share your code/files with other people. 
   - If you work alone, on the same machine, git is enough
   - If you work alone, on different machines, use git to backup on your local machine, then push to Github
