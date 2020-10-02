@@ -23,7 +23,7 @@ author: An Hoang
 ## War stories
 - Created multiple versions of a file and forgetting what they do
 
-- Change one file and don't know if the other files in a pipeline still work or not. Need to test multiple versions of a step in a pipeline
+- Change one file and don't know if the other files in a pipeline still work or not, **extremely afraid to make any changes**. Need to test multiple versions of a step in a pipeline
 
 - Inheriting a script from someone else, want to make changes => create different functions `function_x`, `function_x_an`
 
@@ -40,7 +40,6 @@ author: An Hoang
 ## Introducing git
 
 ### Barebones, layman definition
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
 
 ![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](/images/reproducibility/git/git-simple.png "test image not working")
 
@@ -53,13 +52,13 @@ author: An Hoang
 
 - Fundamental unit: a `commit`. Committing changes is like saving a checkpoint/version to go back to in video games.
 
-Read more:
+**Read more**:
 - https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 - https://coderefinery.github.io/git-intro/01-motivation/
 - https://kbroman.org/github_tutorial/pages/why.html
 
   
-### 5 "locations" your file goes through
+### **5 "locations" your file goes through**
 
 ![https://ndpsoftware.com/git-cheatsheet.html#loc=;]({{ site.baseurl }}/images/reproducibility/git/5-git-locations.png)
 ![https://www.edureka.co/blog/git-tutorial/]({{ site.baseurl }}/images/reproducibility/git/5-git-locations-with-commands.png)
@@ -80,16 +79,16 @@ Read more:
 
   5. **Upstream/Remote repository**:  Where you upload your files onto the internet/cloud. This can be Github, Bitbucket, AWS or sites that can store your data for a fee
 
-### 4 status of file
+### **4 status of file**
 ![https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository]({{ site.baseurl }}/images/reproducibility/git/life-cycle-of-file-status.png)
 
 ![https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle]({{ site.baseurl }}/images/reproducibility/git/file-transitioning-states.png)
 
-Read more:
+**Read more**:
 - https://ilearnthis.com/a/git-file-status-lifecycle/
 - https://screencasts.delicious-insights.com/courses/git-core-concepts
 
-### Tying the two concepts together
+### **Tying the two concepts together**
 
 ![]({{ site.baseurl }}/images/reproducibility/git/location-and-file-status.png)
 
@@ -112,6 +111,7 @@ Read more:
   - Prepare more materials on git workflow for data analysis (how often to commit, when to commit etc, branching, visualizing git)
   - Find resources for git + Jupyter, git submodules/changing folder structure
   - Find resources about python package management (conda + pip + Docker)
+  - Example of self-created packages: need to use `utils.py` in the opioid projects for MAG, but cannot because the environment is different (`mag-aging-ai` doesn't have/doesn't need `hdbscan` for example)
   - Do nbdev/fastpage tutorial
 
 # Resources
@@ -119,7 +119,7 @@ Read more:
 ## Shared
 ### Cheatsheets
   * [git - the simple guide - no deep shit!](http://up1.github.io/git-guide/index.html)
-  * [Git: Cheat Sheet (advanced) | Maxence Poutord](https://www.maxpou.fr/git-cheat-sheet)
+  * [Git: Cheat Sheet (advanced), Maxence Poutord](https://www.maxpou.fr/git-cheat-sheet)
   * [Interactive Git Cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
   * [Flowchart for when getting stuck](http://justinhileman.info/article/git-pretty/git-pretty.png)
 
@@ -142,7 +142,7 @@ Read more:
   * [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
   * [Learn Git Branching](https://learngitbranching.js.org/)
   * [git ready » learn git one commit at a time](http://gitready.com/)
-  * [Git | Martin Zlámal 🤓](https://mrtnzlml.com/docs/git)
+  * [Git, Martin Zlámal 🤓](https://mrtnzlml.com/docs/git)
   * [Git power tools for daily use » nvie.com](https://nvie.com/posts/git-power-tools/)
   * [nvie/git-toolbelt: A suite of useful Git commands that aid with scripting or every day command line usage](https://github.com/nvie/git-toolbelt#readme)
   * [The Thing About Git](https://tomayko.com/blog/2008/the-thing-about-git)
