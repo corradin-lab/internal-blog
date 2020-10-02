@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Introduction to git | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Introduction to git" />
+<meta name="author" content="An Hoang" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Meeting notes for introduction to git Oct 1st" />
+<meta property="og:description" content="Meeting notes for introduction to git Oct 1st" />
+<link rel="canonical" href="https://corradin-lab.github.io/internal-blog/git/reproducibility/2020/10/01/reproducibility-git-intro.html" />
+<meta property="og:url" content="https://corradin-lab.github.io/internal-blog/git/reproducibility/2020/10/01/reproducibility-git-intro.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-01T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Meeting notes for introduction to git Oct 1st","url":"https://corradin-lab.github.io/internal-blog/git/reproducibility/2020/10/01/reproducibility-git-intro.html","@type":"BlogPosting","headline":"Introduction to git","dateModified":"2020-10-01T00:00:00-05:00","datePublished":"2020-10-01T00:00:00-05:00","author":{"@type":"Person","name":"An Hoang"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://corradin-lab.github.io/internal-blog/git/reproducibility/2020/10/01/reproducibility-git-intro.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/internal-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://corradin-lab.github.io/internal-blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/internal-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/internal-blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/internal-blog/about/">About Me</a><a class="page-link" href="/internal-blog/search/">Search</a><a class="page-link" href="/internal-blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Introduction to git</h1><p class="page-description">Meeting notes for introduction to git Oct 1st</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-01T00:00:00-05:00" itemprop="datePublished">
+        Oct 1, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">An Hoang</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/internal-blog/categories/#git">git</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/internal-blog/categories/#reproducibility">reproducibility</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#talked-about-our-current-issues">Talked about our current issues</a></li>
+<li class="toc-entry toc-h1"><a href="#talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do">Talked about the article  Reproducible Programming for Biologists Who Code. Part 1: Must do</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#version-control">Version control</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">Showed the .snapshot folder on Whitehead’s corradin_data (corradin_biobank and corradin_cache are not backed up)</a></li>
+<li class="toc-entry toc-h3"><a href="#war-stories">War stories</a></li>
+<li class="toc-entry toc-h3"><a href="#introducing-git">Introducing git</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#barebones-layman-definition">Barebones, layman definition</a></li>
+<li class="toc-entry toc-h4"><a href="#5-locations-your-file-goes-through">5 “locations” your file goes through</a></li>
+<li class="toc-entry toc-h4"><a href="#4-status-of-file">4 status of file</a></li>
+<li class="toc-entry toc-h4"><a href="#tying-the-two-concepts-together">Tying the two concepts together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#recording-data-access">Recording data access</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#actions-for-next-meeting">Actions for next meeting</a></li>
+<li class="toc-entry toc-h1"><a href="#resources">Resources</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#shared">Shared</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cheatsheets">Cheatsheets</a></li>
+<li class="toc-entry toc-h3"><a href="#learning-resources">Learning resources</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#pick-one-and-explore-as-many-as-youd-like">Pick one (and explore as many as you’d like):</a></li>
+<li class="toc-entry toc-h2"><a href="#extra-resources-ignore-below-if-youre-not-an">Extra resources (Ignore below if you’re not An):</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#workflow">Workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="talked-about-our-current-issues">
+<a class="anchor" href="#talked-about-our-current-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Talked about our current issues</h1>
+<ul>
+  <li>Orian dealing with different versions of scripts. Figuring out Git</li>
+  <li>Yanwei dealing with multiple files/threshold to test with GSEA</li>
+  <li>An dealing with broken conda environment, cannot install packages</li>
+</ul>
+
+<h1 id="talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do">
+<a class="anchor" href="#talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>Talked about the article  <a href="https://ben-heil.github.io/2020-06-16-mustdo/">Reproducible Programming for Biologists Who Code. Part 1: Must do</a>
+</h1>
+
+<h2 id="version-control">
+<a class="anchor" href="#version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version control</h2>
+
+<h3 id="showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">
+<a class="anchor" href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Showed the <code class="language-plaintext highlighter-rouge">.snapshot</code> folder on Whitehead’s <code class="language-plaintext highlighter-rouge">corradin_data</code> (<code class="language-plaintext highlighter-rouge">corradin_biobank</code> and <code class="language-plaintext highlighter-rouge">corradin_cache</code> are not backed up)</h3>
+
+<h3 id="war-stories">
+<a class="anchor" href="#war-stories" aria-hidden="true"><span class="octicon octicon-link"></span></a>War stories</h3>
+<ul>
+  <li>
+    <p>Created multiple versions of a file and forgetting what they do</p>
+  </li>
+  <li>
+    <p>Change one file and don’t know if the other files in a pipeline still work or not. Need to test multiple versions of a step in a pipeline</p>
+  </li>
+  <li>
+    <p>Inheriting a script from someone else, want to make changes =&gt; create different functions <code class="language-plaintext highlighter-rouge">function_x</code>, <code class="language-plaintext highlighter-rouge">function_x_an</code></p>
+  </li>
+  <li>
+    <p>Every time create a new feature, duplicate the old file and then add new feature to the new file. Finally, <strong>MANUALLY MERGE BY EYE</strong> to see which line changed between the new file and the old one to copy and paste back into the old file</p>
+  </li>
+  <li>
+    <p>The need to maintain two versions of a script concurrently: <strong>development/experiment</strong> and <strong>production</strong>.</p>
+  </li>
+  <li>
+    <p>Accidentally delete files and have to rely on backups by IT, which might not be fine-grained enough to save changes between two backups.</p>
+  </li>
+  <li>
+    <p>Jupyter froze and did not save code =&gt; have to rewrite code</p>
+  </li>
+</ul>
+
+<h3 id="introducing-git">
+<a class="anchor" href="#introducing-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducing git</h3>
+
+<h4 id="barebones-layman-definition">
+<a class="anchor" href="#barebones-layman-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Barebones, layman definition</h4>
+<p><img src="/internal-blog/images/logo.png" alt="" title="fast.ai's logo">
+<img src="images/git/git-simple.png" alt="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"></p>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">git</code> is like the <code class="language-plaintext highlighter-rouge">.snapshot</code> folder storing backup of different versions for you only. <code class="language-plaintext highlighter-rouge">github</code> is like Google Drive, where you share your code/files with other people.
+    <ul>
+      <li>If you work alone, on the same machine, git is enough</li>
+      <li>If you work alone, on different machines, use git to backup on your local machine, then push to Github</li>
+      <li>If you work with other people, push to Github as above</li>
+    </ul>
+  </li>
+  <li>Fundamental unit: a <code class="language-plaintext highlighter-rouge">commit</code>. Committing changes is like saving a checkpoint/version to go back to in video games.</li>
+</ul>
+
+<p>Read more:</p>
+<ul>
+  <li>https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</li>
+  <li>https://coderefinery.github.io/git-intro/01-motivation/</li>
+  <li>https://kbroman.org/github_tutorial/pages/why.html</li>
+</ul>
+
+<h4 id="5-locations-your-file-goes-through">
+<a class="anchor" href="#5-locations-your-file-goes-through" aria-hidden="true"><span class="octicon octicon-link"></span></a>5 “locations” your file goes through</h4>
+
+<p><img src="../images/5-git-locations.png" alt="https://ndpsoftware.com/git-cheatsheet.html#loc=;">
+<img src="../images/5-git-locations-with-commands.png" alt="https://www.edureka.co/blog/git-tutorial/">
+<img src="../images/git-commands-to-switch-between-file-status.png" alt=""></p>
+
+<ol>
+  <li>
+    <p><strong>Stash</strong>: save your changes temporarily in a stack (eg. a change that is not final enough to be a commit). Kind of like <code class="language-plaintext highlighter-rouge">Ctrl + Z</code>, although you get to define how much work/code is restored each time. You can reapply your changes from the most recent save to the oldest one</p>
+  </li>
+  <li>
+    <p><strong>Workspace</strong>: Your active working space, files you create will go here. Files that don’t have changes since last commit will go here. Once you added/committed a file, Git tracks the status of that file and tell you (unchanged, uncommitted change)</p>
+  </li>
+  <li>
+    <p><strong>Index/Staging area</strong>: Think of it as a loading dock. If your <code class="language-plaintext highlighter-rouge">commit</code> is like a <em>shipment</em>, and your <code class="language-plaintext highlighter-rouge">file changes</code> are like <em>individual packages</em> then your <code class="language-plaintext highlighter-rouge">index/staging area</code> is where you bundle those changes (could be from one or many different files) into one shipment.</p>
+
+    <p>Once you have commited the changes/save your check point/sent off the shipment, these changes are always bundled together. Going back to the checkpoint will load changes up until that commit/version</p>
+  </li>
+  <li>
+    <p><strong>Local repository</strong>: Your <code class="language-plaintext highlighter-rouge">.git</code> folder in the same location that saves all your versions</p>
+  </li>
+  <li>
+    <p><strong>Upstream/Remote repository</strong>:  Where you upload your files onto the internet/cloud. This can be Github, Bitbucket, AWS or sites that can store your data for a fee</p>
+  </li>
+</ol>
+
+<h4 id="4-status-of-file">
+<a class="anchor" href="#4-status-of-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 status of file</h4>
+<p><img src="../images/life-cycle-of-file-status.png" alt="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"></p>
+
+<p><img src="../images/file-transitioning-states.png" alt="https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle"></p>
+
+<p>Read more:</p>
+<ul>
+  <li>https://ilearnthis.com/a/git-file-status-lifecycle/</li>
+  <li>https://screencasts.delicious-insights.com/courses/git-core-concepts</li>
+</ul>
+
+<h4 id="tying-the-two-concepts-together">
+<a class="anchor" href="#tying-the-two-concepts-together" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tying the two concepts together</h4>
+
+<p><img src="../images/location-and-file-status.png" alt=""></p>
+
+<h2 id="recording-data-access">
+<a class="anchor" href="#recording-data-access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recording data access</h2>
+<ul>
+  <li>Save the command to download the data (UKBiobank, outside dataset)</li>
+  <li>Record the download/access date or version of the dataset</li>
+  <li>
+<strong>How to link data artifact to code?</strong> DVC #future</li>
+  <li>
+<strong>Catalog of data for each project and their metadata</strong> Intake</li>
+</ul>
+
+<h1 id="actions-for-next-meeting">
+<a class="anchor" href="#actions-for-next-meeting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Actions for next meeting</h1>
+
+<p>## Everyone</p>
+<ul>
+  <li>Learn about git commands from the resources below : add, commit, push, merge, branch, checkout, pull</li>
+  <li>Check out all resources in the <strong>shared</strong> section (they are short, visual and helpful) and one in <strong>optional</strong> section</li>
+</ul>
+
+<p>## An</p>
+<ul>
+  <li>Design git/github activity (fork, pull request, branch)</li>
+  <li>Prepare more materials on git workflow for data analysis (how often to commit, when to commit etc, branching, visualizing git)</li>
+  <li>Find resources for git + Jupyter, git submodules/changing folder structure</li>
+  <li>Find resources about python package management (conda + pip + Docker)</li>
+  <li>Do nbdev/fastpage tutorial</li>
+</ul>
+
+<h1 id="resources">
+<a class="anchor" href="#resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h1>
+
+<h2 id="shared">
+<a class="anchor" href="#shared" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shared</h2>
+<h3 id="cheatsheets">
+<a class="anchor" href="#cheatsheets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cheatsheets</h3>
+<ul>
+  <li><a href="http://up1.github.io/git-guide/index.html">git - the simple guide - no deep shit!</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[Git: Cheat Sheet (advanced)</td>
+          <td>Maxence Poutord](https://www.maxpou.fr/git-cheat-sheet)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;">Interactive Git Cheatsheet</a></li>
+  <li><a href="http://justinhileman.info/article/git-pretty/git-pretty.png">Flowchart for when getting stuck</a></li>
+</ul>
+
+<h3 id="learning-resources">
+<a class="anchor" href="#learning-resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning resources</h3>
+<ul>
+  <li>
+<a href="https://guides.github.com/">GitHub Guides</a> (In order: Git Handbook,Understanding the Github flow, Hello world, Forking projects)</li>
+  <li>
+<a href="https://try.github.io/">Resources to learn Git</a> (Git-It section)</li>
+</ul>
+
+<h2 id="pick-one-and-explore-as-many-as-youd-like">
+<a class="anchor" href="#pick-one-and-explore-as-many-as-youd-like" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pick one (and explore as many as you’d like):</h2>
+<ul>
+  <li><a href="https://gitimmersion.com/">Git Immersion</a></li>
+  <li><a href="https://coderefinery.github.io/git-intro/">Introduction to version control with Git - Git introduction</a></li>
+  <li><a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
+  <li><a href="https://kbroman.org/github_tutorial/">git/github guide</a></li>
+  <li><a href="https://www.daolf.com/posts/git-series-part-1/">🐙 Git series 1/3: Understanding git for real by exploring the .git directory · daolf</a></li>
+</ul>
+
+<h2 id="extra-resources-ignore-below-if-youre-not-an">
+<a class="anchor" href="#extra-resources-ignore-below-if-youre-not-an" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra resources (Ignore below if you’re not An):</h2>
+<ul>
+  <li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">A Visual Git Reference</a></li>
+  <li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+  <li><a href="http://gitready.com/">git ready » learn git one commit at a time</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[Git</td>
+          <td>Martin Zlámal 🤓](https://mrtnzlml.com/docs/git)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://nvie.com/posts/git-power-tools/">Git power tools for daily use » nvie.com</a></li>
+  <li><a href="https://github.com/nvie/git-toolbelt#readme">nvie/git-toolbelt: A suite of useful Git commands that aid with scripting or every day command line usage</a></li>
+  <li><a href="https://tomayko.com/blog/2008/the-thing-about-git">The Thing About Git</a></li>
+  <li>
+    <p><a href="https://dev.to/sublimegeek/git-staging-area-explained-like-im-five-1anh">Git Staging Area: Explained Like I’m Five - DEV</a></p>
+  </li>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Git - Recording Changes to the Repository</a></li>
+</ul>
+
+<h3 id="workflow">
+<a class="anchor" href="#workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow</h3>
+<ul>
+  <li><a href="https://ericmjl.github.io/essays-on-data-science/workflow/gitflow/">Principled Git-based Workflow in Collaborative Data Science Projects - Essays on Data Science</a></li>
+  <li><a href="https://sandofsky.com/workflow/git-workflow/">Understanding the Git Workflow</a></li>
+  <li><a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model » nvie.com</a></li>
+</ul>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="corradin-lab/internal-blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/internal-blog/git/reproducibility/2020/10/01/reproducibility-git-intro.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/internal-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/internal-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/internal-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/internal-blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/internal-blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
