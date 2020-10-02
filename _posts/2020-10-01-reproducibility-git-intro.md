@@ -42,7 +42,7 @@ author: An Hoang
 ![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
 ![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](/images/reproducibility/git/git-simple.png "test")
 
-![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](({{ site.baseurl }}/images/reproducibility/git/git-simple.png "test")
+![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control]({{ site.baseurl }}/images/reproducibility/git/git-simple.png "test")
 
 - `git` is like the `.snapshot` folder storing backup of different versions for you only. `github` is like Google Drive, where you share your code/files with other people. 
   - If you work alone, on the same machine, git is enough
