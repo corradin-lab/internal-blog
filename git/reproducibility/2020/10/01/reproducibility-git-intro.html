@@ -101,25 +101,22 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#talked-about-our-current-issues">Talked about our current issues</a></li>
-<li class="toc-entry toc-h1"><a href="#talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do">Talked about the article  Reproducible Programming for Biologists Who Code. Part 1: Must do</a>
+<li class="toc-entry toc-h1"><a href="#talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do">Talked about the article  Reproducible Programming for Biologists Who Code. Part 1: Must do</a></li>
+<li class="toc-entry toc-h1"><a href="#version-control">Version control</a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#version-control">Version control</a>
+<li class="toc-entry toc-h2"><a href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">Showed the .snapshot folder on Whitehead’s corradin_data (corradin_biobank and corradin_cache are not backed up)</a></li>
+<li class="toc-entry toc-h2"><a href="#war-stories">War stories</a></li>
+<li class="toc-entry toc-h2"><a href="#introducing-git">Introducing git</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">Showed the .snapshot folder on Whitehead’s corradin_data (corradin_biobank and corradin_cache are not backed up)</a></li>
-<li class="toc-entry toc-h3"><a href="#war-stories">War stories</a></li>
-<li class="toc-entry toc-h3"><a href="#introducing-git">Introducing git</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#barebones-layman-definition">Barebones, layman definition</a></li>
-<li class="toc-entry toc-h4"><a href="#5-locations-your-file-goes-through">5 “locations” your file goes through</a></li>
-<li class="toc-entry toc-h4"><a href="#4-status-of-file">4 status of file</a></li>
-<li class="toc-entry toc-h4"><a href="#tying-the-two-concepts-together">Tying the two concepts together</a></li>
+<li class="toc-entry toc-h3"><a href="#barebones-layman-definition">Barebones, layman definition</a></li>
+<li class="toc-entry toc-h3"><a href="#5-locations-your-file-goes-through">5 “locations” your file goes through</a></li>
+<li class="toc-entry toc-h3"><a href="#4-status-of-file">4 status of file</a></li>
+<li class="toc-entry toc-h3"><a href="#tying-the-two-concepts-together">Tying the two concepts together</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#recording-data-access">Recording data access</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h1"><a href="#recording-data-access">Recording data access</a></li>
 <li class="toc-entry toc-h1"><a href="#actions-for-next-meeting">Actions for next meeting</a></li>
 <li class="toc-entry toc-h1"><a href="#resources">Resources</a>
 <ul>
@@ -132,6 +129,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#pick-one-and-explore-as-many-as-youd-like">Pick one (and explore as many as you’d like):</a></li>
 <li class="toc-entry toc-h2"><a href="#extra-resources-ignore-below-if-youre-not-an">Extra resources (Ignore below if you’re not An):</a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#extra-git-learning-resources">Extra Git learning resources</a></li>
 <li class="toc-entry toc-h3"><a href="#workflow">Workflow</a></li>
 </ul>
 </li>
@@ -149,14 +147,15 @@ window.onload = wrap_img;
 <a class="anchor" href="#talked-about-the-article--reproducible-programming-for-biologists-who-code-part-1-must-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>Talked about the article  <a href="https://ben-heil.github.io/2020-06-16-mustdo/">Reproducible Programming for Biologists Who Code. Part 1: Must do</a>
 </h1>
 
-<h2 id="version-control">
-<a class="anchor" href="#version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version control</h2>
+<hr>
+<h1 id="version-control">
+<a class="anchor" href="#version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version control</h1>
 
-<h3 id="showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">
-<a class="anchor" href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Showed the <code class="language-plaintext highlighter-rouge">.snapshot</code> folder on Whitehead’s <code class="language-plaintext highlighter-rouge">corradin_data</code> (<code class="language-plaintext highlighter-rouge">corradin_biobank</code> and <code class="language-plaintext highlighter-rouge">corradin_cache</code> are not backed up)</h3>
+<h2 id="showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up">
+<a class="anchor" href="#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Showed the <code class="language-plaintext highlighter-rouge">.snapshot</code> folder on Whitehead’s <code class="language-plaintext highlighter-rouge">corradin_data</code> (<code class="language-plaintext highlighter-rouge">corradin_biobank</code> and <code class="language-plaintext highlighter-rouge">corradin_cache</code> are not backed up)</h2>
 
-<h3 id="war-stories">
-<a class="anchor" href="#war-stories" aria-hidden="true"><span class="octicon octicon-link"></span></a>War stories</h3>
+<h2 id="war-stories">
+<a class="anchor" href="#war-stories" aria-hidden="true"><span class="octicon octicon-link"></span></a>War stories</h2>
 <ul>
   <li>
     <p>Created multiple versions of a file and forgetting what they do</p>
@@ -181,11 +180,11 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h3 id="introducing-git">
-<a class="anchor" href="#introducing-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducing git</h3>
+<h2 id="introducing-git">
+<a class="anchor" href="#introducing-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducing git</h2>
 
-<h4 id="barebones-layman-definition">
-<a class="anchor" href="#barebones-layman-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Barebones, layman definition</h4>
+<h3 id="barebones-layman-definition">
+<a class="anchor" href="#barebones-layman-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Barebones, layman definition</h3>
 <p><img src="/internal-blog/images/logo.png" alt="" title="fast.ai's logo"></p>
 
 <p><img src="/images/reproducibility/git/git-simple.png" alt="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" title="test image not working"></p>
@@ -211,8 +210,8 @@ window.onload = wrap_img;
   <li>https://kbroman.org/github_tutorial/pages/why.html</li>
 </ul>
 
-<h4 id="5-locations-your-file-goes-through">
-<a class="anchor" href="#5-locations-your-file-goes-through" aria-hidden="true"><span class="octicon octicon-link"></span></a>5 “locations” your file goes through</h4>
+<h3 id="5-locations-your-file-goes-through">
+<a class="anchor" href="#5-locations-your-file-goes-through" aria-hidden="true"><span class="octicon octicon-link"></span></a>5 “locations” your file goes through</h3>
 
 <p><img src="/internal-blog/images/reproducibility/git/5-git-locations.png" alt="https://ndpsoftware.com/git-cheatsheet.html#loc=;">
 <img src="/internal-blog/images/reproducibility/git/5-git-locations-with-commands.png" alt="https://www.edureka.co/blog/git-tutorial/">
@@ -238,8 +237,8 @@ window.onload = wrap_img;
   </li>
 </ol>
 
-<h4 id="4-status-of-file">
-<a class="anchor" href="#4-status-of-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 status of file</h4>
+<h3 id="4-status-of-file">
+<a class="anchor" href="#4-status-of-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 status of file</h3>
 <p><img src="/internal-blog/images/reproducibility/git/life-cycle-of-file-status.png" alt="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"></p>
 
 <p><img src="/internal-blog/images/reproducibility/git/file-transitioning-states.png" alt="https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle"></p>
@@ -250,13 +249,14 @@ window.onload = wrap_img;
   <li>https://screencasts.delicious-insights.com/courses/git-core-concepts</li>
 </ul>
 
-<h4 id="tying-the-two-concepts-together">
-<a class="anchor" href="#tying-the-two-concepts-together" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tying the two concepts together</h4>
+<h3 id="tying-the-two-concepts-together">
+<a class="anchor" href="#tying-the-two-concepts-together" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tying the two concepts together</h3>
 
 <p><img src="/internal-blog/images/reproducibility/git/location-and-file-status.png" alt=""></p>
 
-<h2 id="recording-data-access">
-<a class="anchor" href="#recording-data-access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recording data access</h2>
+<hr>
+<h1 id="recording-data-access">
+<a class="anchor" href="#recording-data-access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recording data access</h1>
 <ul>
   <li>Save the command to download the data (UKBiobank, outside dataset)</li>
   <li>Record the download/access date or version of the dataset</li>
@@ -266,6 +266,7 @@ window.onload = wrap_img;
 <strong>Catalog of data for each project and their metadata</strong> Intake</li>
 </ul>
 
+<hr>
 <h1 id="actions-for-next-meeting">
 <a class="anchor" href="#actions-for-next-meeting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Actions for next meeting</h1>
 
@@ -328,6 +329,9 @@ window.onload = wrap_img;
 
 <h2 id="extra-resources-ignore-below-if-youre-not-an">
 <a class="anchor" href="#extra-resources-ignore-below-if-youre-not-an" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra resources (Ignore below if you’re not An):</h2>
+
+<h3 id="extra-git-learning-resources">
+<a class="anchor" href="#extra-git-learning-resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Git learning resources</h3>
 <ul>
   <li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">A Visual Git Reference</a></li>
   <li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
