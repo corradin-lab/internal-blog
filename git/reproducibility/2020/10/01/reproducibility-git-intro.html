@@ -161,7 +161,7 @@ window.onload = wrap_img;
     <p>Created multiple versions of a file and forgetting what they do</p>
   </li>
   <li>
-    <p>Change one file and don’t know if the other files in a pipeline still work or not. Need to test multiple versions of a step in a pipeline</p>
+    <p>Change one file and don’t know if the other files in a pipeline still work or not, <strong>extremely afraid to make any changes</strong>. Need to test multiple versions of a step in a pipeline</p>
   </li>
   <li>
     <p>Inheriting a script from someone else, want to make changes =&gt; create different functions <code class="language-plaintext highlighter-rouge">function_x</code>, <code class="language-plaintext highlighter-rouge">function_x_an</code></p>
@@ -185,7 +185,6 @@ window.onload = wrap_img;
 
 <h3 id="barebones-layman-definition">
 <a class="anchor" href="#barebones-layman-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Barebones, layman definition</h3>
-<p><img src="/internal-blog/images/logo.png" alt="" title="fast.ai's logo"></p>
 
 <p><img src="/images/reproducibility/git/git-simple.png" alt="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" title="test image not working"></p>
 
@@ -203,7 +202,7 @@ window.onload = wrap_img;
   <li>Fundamental unit: a <code class="language-plaintext highlighter-rouge">commit</code>. Committing changes is like saving a checkpoint/version to go back to in video games.</li>
 </ul>
 
-<p>Read more:</p>
+<p><strong>Read more</strong>:</p>
 <ul>
   <li>https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</li>
   <li>https://coderefinery.github.io/git-intro/01-motivation/</li>
@@ -211,7 +210,8 @@ window.onload = wrap_img;
 </ul>
 
 <h3 id="5-locations-your-file-goes-through">
-<a class="anchor" href="#5-locations-your-file-goes-through" aria-hidden="true"><span class="octicon octicon-link"></span></a>5 “locations” your file goes through</h3>
+<a class="anchor" href="#5-locations-your-file-goes-through" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>5 “locations” your file goes through</strong>
+</h3>
 
 <p><img src="/internal-blog/images/reproducibility/git/5-git-locations.png" alt="https://ndpsoftware.com/git-cheatsheet.html#loc=;">
 <img src="/internal-blog/images/reproducibility/git/5-git-locations-with-commands.png" alt="https://www.edureka.co/blog/git-tutorial/">
@@ -238,19 +238,21 @@ window.onload = wrap_img;
 </ol>
 
 <h3 id="4-status-of-file">
-<a class="anchor" href="#4-status-of-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 status of file</h3>
+<a class="anchor" href="#4-status-of-file" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4 status of file</strong>
+</h3>
 <p><img src="/internal-blog/images/reproducibility/git/life-cycle-of-file-status.png" alt="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"></p>
 
 <p><img src="/internal-blog/images/reproducibility/git/file-transitioning-states.png" alt="https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle"></p>
 
-<p>Read more:</p>
+<p><strong>Read more</strong>:</p>
 <ul>
   <li>https://ilearnthis.com/a/git-file-status-lifecycle/</li>
   <li>https://screencasts.delicious-insights.com/courses/git-core-concepts</li>
 </ul>
 
 <h3 id="tying-the-two-concepts-together">
-<a class="anchor" href="#tying-the-two-concepts-together" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tying the two concepts together</h3>
+<a class="anchor" href="#tying-the-two-concepts-together" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Tying the two concepts together</strong>
+</h3>
 
 <p><img src="/internal-blog/images/reproducibility/git/location-and-file-status.png" alt=""></p>
 
@@ -282,6 +284,7 @@ window.onload = wrap_img;
   <li>Prepare more materials on git workflow for data analysis (how often to commit, when to commit etc, branching, visualizing git)</li>
   <li>Find resources for git + Jupyter, git submodules/changing folder structure</li>
   <li>Find resources about python package management (conda + pip + Docker)</li>
+  <li>Example of self-created packages: need to use <code class="language-plaintext highlighter-rouge">utils.py</code> in the opioid projects for MAG, but cannot because the environment is different (<code class="language-plaintext highlighter-rouge">mag-aging-ai</code> doesn’t have/doesn’t need <code class="language-plaintext highlighter-rouge">hdbscan</code> for example)</li>
   <li>Do nbdev/fastpage tutorial</li>
 </ul>
 
@@ -294,16 +297,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#cheatsheets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cheatsheets</h3>
 <ul>
   <li><a href="http://up1.github.io/git-guide/index.html">git - the simple guide - no deep shit!</a></li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[Git: Cheat Sheet (advanced)</td>
-          <td>Maxence Poutord](https://www.maxpou.fr/git-cheat-sheet)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li><a href="https://www.maxpou.fr/git-cheat-sheet">Git: Cheat Sheet (advanced), Maxence Poutord</a></li>
   <li><a href="https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;">Interactive Git Cheatsheet</a></li>
   <li><a href="http://justinhileman.info/article/git-pretty/git-pretty.png">Flowchart for when getting stuck</a></li>
 </ul>
@@ -336,16 +330,7 @@ window.onload = wrap_img;
   <li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">A Visual Git Reference</a></li>
   <li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
   <li><a href="http://gitready.com/">git ready » learn git one commit at a time</a></li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[Git</td>
-          <td>Martin Zlámal 🤓](https://mrtnzlml.com/docs/git)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li><a href="https://mrtnzlml.com/docs/git">Git, Martin Zlámal 🤓</a></li>
   <li><a href="https://nvie.com/posts/git-power-tools/">Git power tools for daily use » nvie.com</a></li>
   <li><a href="https://github.com/nvie/git-toolbelt#readme">nvie/git-toolbelt: A suite of useful Git commands that aid with scripting or every day command line usage</a></li>
   <li><a href="https://tomayko.com/blog/2008/the-thing-about-git">The Thing About Git</a></li>
