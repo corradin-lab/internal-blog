@@ -40,7 +40,8 @@ author: An Hoang
 
 #### Barebones, layman definition
 ![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](/images/reproducibility/git/git-simple.png "test")
+
+![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](/images/reproducibility/git/git-simple.png "test image not working")
 
 ![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control]({{ site.baseurl }}/images/reproducibility/git/git-simple.png "test")
 
@@ -59,9 +60,9 @@ Read more:
   
 #### 5 "locations" your file goes through
 
-![https://ndpsoftware.com/git-cheatsheet.html#loc=;](../images/5-git-locations.png)
-![https://www.edureka.co/blog/git-tutorial/](../images/5-git-locations-with-commands.png)
-![](../images/git-commands-to-switch-between-file-status.png)
+![https://ndpsoftware.com/git-cheatsheet.html#loc=;]({{ site.baseurl }}/images/reproducibility/git/5-git-locations.png)
+![https://www.edureka.co/blog/git-tutorial/]({{ site.baseurl }}/images/reproducibility/git/5-git-locations-with-commands.png)
+![]({{ site.baseurl }}/images/reproducibility/git/git-commands-to-switch-between-file-status.png)
 
 
   1. **Stash**: save your changes temporarily in a stack (eg. a change that is not final enough to be a commit). Kind of like `Ctrl + Z`, although you get to define how much work/code is restored each time. You can reapply your changes from the most recent save to the oldest one
@@ -79,9 +80,9 @@ Read more:
   5. **Upstream/Remote repository**:  Where you upload your files onto the internet/cloud. This can be Github, Bitbucket, AWS or sites that can store your data for a fee
 
 #### 4 status of file
-![https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository](../images/life-cycle-of-file-status.png)
+![https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository]({{ site.baseurl }}/images/reproducibility/git/life-cycle-of-file-status.png)
 
-![https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle](../images/file-transitioning-states.png)
+![https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle]({{ site.baseurl }}/images/reproducibility/git/file-transitioning-states.png)
 
 Read more:
 - https://ilearnthis.com/a/git-file-status-lifecycle/
@@ -89,7 +90,7 @@ Read more:
 
 #### Tying the two concepts together
 
-![](../images/location-and-file-status.png)
+![]({{ site.baseurl }}/images/reproducibility/git/location-and-file-status.png)
 
 
 ## Recording data access
