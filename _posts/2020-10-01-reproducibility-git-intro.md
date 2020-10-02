@@ -15,11 +15,12 @@ author: An Hoang
 
 # Talked about the article  [Reproducible Programming for Biologists Who Code. Part 1: Must do](https://ben-heil.github.io/2020-06-16-mustdo/)
 
-## Version control
+---
+# Version control
 
-### Showed the `.snapshot` folder on Whitehead's `corradin_data` (`corradin_biobank` and `corradin_cache` are not backed up)
+## Showed the `.snapshot` folder on Whitehead's `corradin_data` (`corradin_biobank` and `corradin_cache` are not backed up)
 
-### War stories
+## War stories
 - Created multiple versions of a file and forgetting what they do
 
 - Change one file and don't know if the other files in a pipeline still work or not. Need to test multiple versions of a step in a pipeline
@@ -36,9 +37,9 @@ author: An Hoang
 - Jupyter froze and did not save code => have to rewrite code
 
 
-### Introducing git
+## Introducing git
 
-#### Barebones, layman definition
+### Barebones, layman definition
 ![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
 
 ![https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](/images/reproducibility/git/git-simple.png "test image not working")
@@ -58,7 +59,7 @@ Read more:
 - https://kbroman.org/github_tutorial/pages/why.html
 
   
-#### 5 "locations" your file goes through
+### 5 "locations" your file goes through
 
 ![https://ndpsoftware.com/git-cheatsheet.html#loc=;]({{ site.baseurl }}/images/reproducibility/git/5-git-locations.png)
 ![https://www.edureka.co/blog/git-tutorial/]({{ site.baseurl }}/images/reproducibility/git/5-git-locations-with-commands.png)
@@ -79,7 +80,7 @@ Read more:
 
   5. **Upstream/Remote repository**:  Where you upload your files onto the internet/cloud. This can be Github, Bitbucket, AWS or sites that can store your data for a fee
 
-#### 4 status of file
+### 4 status of file
 ![https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository]({{ site.baseurl }}/images/reproducibility/git/life-cycle-of-file-status.png)
 
 ![https://screencasts.delicious-insights.com/courses/git-core-concepts/102205-default-section/305169-zones-and-file-lifecycle]({{ site.baseurl }}/images/reproducibility/git/file-transitioning-states.png)
@@ -88,17 +89,18 @@ Read more:
 - https://ilearnthis.com/a/git-file-status-lifecycle/
 - https://screencasts.delicious-insights.com/courses/git-core-concepts
 
-#### Tying the two concepts together
+### Tying the two concepts together
 
 ![]({{ site.baseurl }}/images/reproducibility/git/location-and-file-status.png)
 
-
-## Recording data access
+---
+# Recording data access
 - Save the command to download the data (UKBiobank, outside dataset)
 - Record the download/access date or version of the dataset
 - **How to link data artifact to code?** DVC #future
 - **Catalog of data for each project and their metadata** Intake
 
+---
 # Actions for next meeting
 
   ## Everyone
@@ -135,6 +137,8 @@ Read more:
 
 
 ## Extra resources (Ignore below if you're not An):
+
+### Extra Git learning resources
   * [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
   * [Learn Git Branching](https://learngitbranching.js.org/)
   * [git ready » learn git one commit at a time](http://gitready.com/)
