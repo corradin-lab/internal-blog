@@ -1,38 +1,12 @@
 ---
-toc: true
-layout: post
-description: Meeting notes for introduction to git Oct 1st
-categories: [git],[reproducibility]
 title: Introduction to git
+description: Meeting notes for introduction to git Oct 1st
+toc: true
+comments: true
+layout: post
+categories: [git, reproducibility]
+author: An Hoang
 ---
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-- [Meeting 2](#meeting-2)
-- [Talked about our current issues](#talked-about-our-current-issues)
-- [Talked about the article  Reproducible Programming for Biologists Who Code. Part 1: Must do](#talked-about-the-article-reproducible-programming-for-biologists-who-code-part-1-must-do)
-  - [Version control](#version-control)
-    - [Showed the `.snapshot` folder on Whitehead's `corradin_data` (`corradin_biobank` and `corradin_cache` are not backed up)](#showed-the-snapshot-folder-on-whiteheads-corradin_data-corradin_biobank-and-corradin_cache-are-not-backed-up)
-    - [War stories](#war-stories)
-    - [Introducing git](#introducing-git)
-      - [Barebones, layman definition](#barebones-layman-definition)
-      - [5 "locations" your file goes through](#5-locations-your-file-goes-through)
-      - [4 status of file](#4-status-of-file)
-      - [Tying the two concepts together](#tying-the-two-concepts-together)
-  - [Recording data access](#recording-data-access)
-- [Actions for next meeting](#actions-for-next-meeting)
-  - [Everyone](#everyone)
-  - [An](#an)
-- [Resources](#resources)
-  - [Shared](#shared)
-    - [Cheatsheets](#cheatsheets)
-    - [Learning resources](#learning-resources)
-  - [Pick one (and explore as many as you'd like):](#pick-one-and-explore-as-many-as-youd-like)
-  - [Extra resources (Ignore below if you're not An):](#extra-resources-ignore-below-if-youre-not-an)
-    - [Workflow](#workflow)
-
-
-# Meeting 2
 
 # Talked about our current issues
 - Orian dealing with different versions of scripts. Figuring out Git
