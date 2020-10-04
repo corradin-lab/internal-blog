@@ -8,6 +8,8 @@ categories: [git, reproducibility]
 author: An Hoang
 ---
 
+![](http://phdcomics.com/comics/archive_print.php?comicid=1531)
+
 # Talked about our current issues
 - Orian dealing with different versions of scripts. Figuring out Git
 - Yanwei dealing with multiple files/threshold to test with GSEA
