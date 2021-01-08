@@ -124,6 +124,7 @@ author: An Hoang
   * [Git: Cheat Sheet (advanced), Maxence Poutord](https://www.maxpou.fr/git-cheat-sheet)
   * [Interactive Git Cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
   * [Flowchart for when getting stuck](http://justinhileman.info/article/git-pretty/git-pretty.png)
+  * [Oh Shit, Git!?!](https://ohshitgit.com/)
 
 ### Learning resources
   * [GitHub Guides](https://guides.github.com/) (In order: Git Handbook,Understanding the Github flow, Hello world, Forking projects)
